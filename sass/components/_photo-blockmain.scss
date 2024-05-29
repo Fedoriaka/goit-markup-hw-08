@@ -1,0 +1,35 @@
+.photo-block__h2 {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: $main-color;
+}
+.photo-block__images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.photo-block__item {
+  position: relative;
+  margin-left: 30px;
+}
+.photo-block__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+.photo-block__text {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text;
+}

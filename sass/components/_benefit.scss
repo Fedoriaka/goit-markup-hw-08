@@ -1,0 +1,37 @@
+.benefit {
+  font-weight: 400;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: $basic-text;
+  padding-bottom: 0;
+}
+.benefit__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefit__item {
+  .benefit__block & {
+    width: 270px;
+  }
+  .benefit__block & + & {
+    margin-left: 30px;
+  }
+}
+.benefit__background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-lite;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.benefit__h3 {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-color;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
