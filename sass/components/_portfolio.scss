@@ -2,9 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
 }
+
 .filter-list__btn {
   background-color: $background-lite;
   font-weight: 500;
@@ -30,5 +32,12 @@
     background: $hover-color-blue;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
       0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (max-width: 785px) {
+  .filter-list {
+    flex-wrap: wrap;
+    width: 326px;
+    justify-content: start;
   }
 }

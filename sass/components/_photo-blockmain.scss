@@ -8,12 +8,13 @@
 }
 .photo-block__images {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-left: -30px;
+  gap: 30px;
 }
 .photo-block__item {
   position: relative;
-  margin-left: 30px;
+  width: 370px;
 }
 .photo-block__content {
   position: absolute;
@@ -32,4 +33,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-text;
+}
+@media screen and (max-width: 1599px) {
+  .photo-block {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .photo-block__images {
+    align-items: center;
+  }
 }
