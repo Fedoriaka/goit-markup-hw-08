@@ -25,7 +25,7 @@ body {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -61,7 +61,7 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -130,7 +130,7 @@ ul {
     fill: #2196f3;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header-list {
     margin-left: 315px;
     -ms-flex-wrap: nowrap;
@@ -208,7 +208,7 @@ ul {
     bottom: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .nav__logo {
     font-size: 26px;
     margin-right: 93px;
@@ -235,13 +235,13 @@ ul {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-img.jpg);
-    min-width: 1600px;
+    min-width: 1200px;
   }
 }
 
@@ -258,7 +258,7 @@ ul {
   min-height: 164px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__h1 {
     font-size: 44px;
     line-height: 136%;
@@ -290,7 +290,7 @@ ul {
 .hero__main-but:active {
   background-color: #188ce8;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__main-but {
     min-width: 216px;
   }
@@ -590,7 +590,7 @@ ul {
   background-color: #188ce8;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     height: 581px;
@@ -614,7 +614,7 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .benefit {
     padding-bottom: 0;
   }
@@ -643,7 +643,7 @@ ul {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .benefit__background-icon {
     width: 270px;
     margin-top: 0;
@@ -702,7 +702,7 @@ ul {
   .benefit__item {
     margin-left: auto;
     margin-right: auto;
-    width: calc(100% - 60px); /* Враховуємо відступи */
+    width: calc(100% - 60px);
   }
 }
 @media screen and (min-width: 786px) {
@@ -710,7 +710,7 @@ ul {
     width: 354px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .benefit__item {
     width: 270px;
   }
@@ -768,12 +768,12 @@ ul {
   color: #fff;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .photo-block {
     display: none;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .photo-block__images {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -823,7 +823,7 @@ ul {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
     height: 428px;
@@ -841,7 +841,7 @@ ul {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
     margin-bottom: 50px;
@@ -883,7 +883,7 @@ ul {
     width: 354px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .members {
     width: 270px;
   }
@@ -950,7 +950,7 @@ ul {
   text-align: center;
   color: #212121;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__header {
     font-size: 36px;
   }
@@ -977,7 +977,7 @@ ul {
     width: 100%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__list {
     margin-top: 50px;
   }
@@ -1006,7 +1006,7 @@ ul {
   fill: #2196f3;
   border: 1px solid #188ce8;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__icon {
     width: 170px;
   }
@@ -1017,7 +1017,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1044,7 +1044,7 @@ ul {
     margin-left: 76px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__main-block {
     text-align: start;
     margin: 0;
@@ -1077,7 +1077,7 @@ ul {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__logo {
     font-size: 26px;
   }
@@ -1092,7 +1092,7 @@ ul {
   font-style: normal;
   margin-bottom: 8px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__adress {
     margin-bottom: 9px;
   }
@@ -1112,7 +1112,7 @@ ul {
 .footer__appeal:not(:last-child) {
   margin-bottom: 8px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__appeal:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -1144,7 +1144,7 @@ ul {
   margin-top: 20px;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__socialmed {
     margin-bottom: 0;
   }
@@ -1181,7 +1181,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__email-block {
     margin-left: 93px;
   }
@@ -1195,7 +1195,7 @@ ul {
   text-align: center;
   color: #fff;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__email-header {
     text-align: start;
   }
@@ -1205,7 +1205,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1270,7 +1270,7 @@ ul {
     width: 450px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__input {
     width: 358px;
   }
@@ -1489,7 +1489,7 @@ ul {
     height: 294px;
   }
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .cards-list__item {
     width: 354px;
     height: 440px;

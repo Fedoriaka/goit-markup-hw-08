@@ -39,13 +39,13 @@
   color: $white-text;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .photo-block {
     display: none;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .photo-block__images {
     align-items: center;
   }
