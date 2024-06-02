@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-bottom: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; // зміна значення margin-bottom
   gap: 8px;
 }
 
@@ -34,6 +33,7 @@
       0 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
 }
+
 @media screen and (max-width: 785px) {
   .filter-list {
     flex-wrap: wrap;

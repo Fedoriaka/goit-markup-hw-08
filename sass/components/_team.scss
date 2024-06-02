@@ -3,7 +3,53 @@
 }
 .team__item {
   width: 450px;
-  height: 460px;
+  height: 622px;
+
+  & img {
+    width: 450px;
+    height: 460px;
+  }
+  @media screen and (max-width: 479px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 2 * 30px);
+    height: auto;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    & .members {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+
+    & img {
+      width: 354px;
+      height: 374px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & + .team__item {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 270px;
+    height: 428px;
+
+    & img {
+      width: 270px;
+      height: 260px;
+    }
+  }
 }
 .team__title {
   font-weight: 700;
@@ -11,29 +57,25 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1600px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   margin-right: auto;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .team__list {
+
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
   }
-  .team__item {
-    width: 354px;
-    height: 374px;
-  }
 }
-@media screen and (max-width: 767px) {
-  .team__item + .team__item {
-    margin-top: 30px;
-  }
-}
+
 .members {
   padding-top: 30px;
   padding-bottom: 24px;
@@ -43,10 +85,13 @@
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
-}
-@media screen and (min-width: 768px) {
-  .members {
+
+  @media screen and (min-width: 768px) {
     width: 354px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 270px;
   }
 }
 
@@ -88,23 +133,5 @@
   &:focus {
     fill: #fff;
     background-color: #188ce8;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .team__item {
-    width: 270px;
-    height: 428px;
-
-    & img {
-      width: 270px;
-      height: 260px;
-    }
-  }
-  .team__title {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
-  .members {
-    width: 270px;
   }
 }

@@ -6,16 +6,19 @@
   margin-bottom: 50px;
   color: $main-color;
 }
+
 .photo-block__images {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .photo-block__item {
   position: relative;
   width: 370px;
 }
+
 .photo-block__content {
   position: absolute;
   left: 0;
@@ -27,6 +30,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .photo-block__text {
   font-weight: 700;
   font-size: 14px;
@@ -34,6 +38,7 @@
   text-transform: uppercase;
   color: $white-text;
 }
+
 @media screen and (max-width: 1599px) {
   .photo-block {
     display: none;

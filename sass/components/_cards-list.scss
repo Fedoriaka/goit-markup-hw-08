@@ -2,7 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (max-width: 785px) {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
 }
+
 .cards-list__card {
   text-decoration: none;
   display: block;
@@ -10,22 +17,24 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
       0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   }
 }
+
 .cards-list__thumb {
   position: relative;
   overflow: hidden;
 }
+
 .cards-list__filling {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-
   top: 0;
   left: 0;
   width: 100%;
@@ -35,6 +44,7 @@
   padding-right: 24px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .cards-list__card:hover &,
   .cards-list__card:focus & {
     transform: translateY(0);
@@ -49,6 +59,7 @@
   letter-spacing: 0.03em;
   color: #fff;
 }
+
 .cards-list__border {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -58,15 +69,20 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+
 .cards-list__sub-title {
   font-weight: 700;
   font-size: 18px;
-
   line-height: 200%;
   letter-spacing: 0.06em;
   color: $main-color;
   text-decoration: none;
+
+  @media screen and (max-width: 785px) {
+    font-size: 16px;
+  }
 }
+
 .cards-list__filter {
   margin-top: 4px;
   font-weight: 400;
@@ -76,8 +92,9 @@
   color: $basic-text;
   text-decoration: none;
 }
-@media screen and (max-width: 785px) {
-  .cards-list__item {
+
+.cards-list__item {
+  @media screen and (max-width: 785px) {
     width: 450px;
     height: 404px;
 
@@ -86,16 +103,8 @@
       height: 294px;
     }
   }
-  .cards-list {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .cards-list__sub-title {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1599px) {
-  .cards-list__item {
+
+  @media screen and (max-width: 1599px) {
     width: 354px;
     height: 440px;
 
@@ -103,9 +112,5 @@
       width: 354px;
       height: 294px;
     }
-  }
-  .cards-list {
-    margin-left: auto;
-    margin-right: auto;
   }
 }

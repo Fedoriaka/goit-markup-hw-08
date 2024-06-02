@@ -1,31 +1,46 @@
 .footer__email-block {
   display: flex;
-
   flex-direction: column;
+
+  @media screen and (min-width: 1600px) {
+    margin-left: 93px;
+  }
 }
+
 .footer__email-header {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-
   color: $white-text;
+
+  @media screen and (min-width: 1600px) {
+    text-align: start;
+  }
 }
+
 .footer__form {
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
+
 .footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 450px;
+  width: 100%; /* Змінено ширину на 100% для адаптації до різних розмірів вікон */
+  max-width: 450px;
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
   margin-top: 20px;
   padding-left: 16px;
-
   color: $white-text;
 
   &::placeholder {
@@ -35,7 +50,14 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 358px;
+  }
 }
+
 .footer__button {
   display: flex;
   align-items: center;
@@ -57,6 +79,7 @@
     background-color: #188ce8;
   }
 }
+
 .footer__button-text {
   font-weight: 700;
   font-size: 16px;
@@ -64,22 +87,4 @@
   letter-spacing: 0.06em;
   text-align: center;
   color: #fff;
-}
-
-@media screen and (min-width: 1600px) {
-  .footer__email-block {
-    margin-left: 93px;
-  }
-  .footer__form {
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
-  }
-  .footer__input {
-    width: 358px;
-  }
-  .footer__email-header {
-    text-align: start;
-  }
 }
