@@ -12,7 +12,9 @@
 
 .cards-list__card {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   box-shadow: none;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -68,6 +70,8 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  flex-grow: 1;
+
 }
 
 .cards-list__sub-title {
@@ -102,15 +106,18 @@
       width: 450px;
       height: 294px;
     }
+
+    
   }
 
   @media screen and (max-width: 1199px) {
     width: 354px;
-    height: 440px;
+    max-height: 440px;
 
     & img {
       width: 354px;
       height: 294px;
     }
+    
   }
 }

@@ -10,7 +10,6 @@
     url(../images/background-mobile.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 480px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -21,7 +20,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/background-tablet.jpg);
-    max-width: 768px;
+   
   }
 
   @media screen and (min-width: 1200px) {
@@ -32,7 +31,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/background-img.jpg);
-    min-width: 1200px;
+    min-width: 1600px;
   }
 }
 
@@ -45,14 +44,14 @@
   text-transform: uppercase;
   text-align: center;
   color: $white-text;
-  width: 360px;
-  min-height: 164px;
+  max-width: 360px;
+  max-height: 164px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 136%;
-    width: 696px;
+    max-width: 696px;
     min-height: 120px;
   }
 }

@@ -15,13 +15,16 @@
 .footer__main-block {
   width: 232px;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 60px;
+
+  @media screen and (max-width: 765px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @media screen and (min-width: 768px) {
     margin-right: 165px;
-    margin-left: 76px;
+    // margin-left: 76px;
   }
 
   @media screen and (min-width: 1200px) {
