@@ -103,6 +103,11 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: start;
+  }
 }
 
 .footer__socialmed {

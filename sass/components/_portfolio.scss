@@ -34,10 +34,19 @@
   }
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 767px) {
   .filter-list {
     flex-wrap: wrap;
     width: 326px;
     justify-content: start;
+  }
+}
+@media screen and (max-width: 479px) {
+  .filter-list {
+    
+      width: 100%;
+      height: auto;
+    
+
   }
 }
