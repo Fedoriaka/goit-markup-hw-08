@@ -66,3 +66,11 @@
 .header-list__item{
   white-space: nowrap;
 }
+
+@media screen and (max-width: 479px) {
+  
+
+  .header-list__link {
+    font-size: 24px;
+  }
+}

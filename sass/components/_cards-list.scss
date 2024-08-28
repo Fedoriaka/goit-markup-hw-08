@@ -64,7 +64,9 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   color: #fff;
-   
+   @media screen and (max-width: 479px) {
+font-size: 16px;
+}
 }
 
 .cards-list__border {
@@ -76,7 +78,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   flex-grow: 1;
-
+ 
 }
 
 .cards-list__sub-title {
@@ -87,7 +89,7 @@
   color: $main-color;
   text-decoration: none;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     font-size: 16px;
   }
 }

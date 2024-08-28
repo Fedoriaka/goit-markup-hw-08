@@ -72,7 +72,10 @@
           </button>
           <ul class="menu__nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__page nav__page-current" style="color: #2196f3"
+              <a
+                href="./index.html"
+                class="nav__page nav__page-current"
+                style="color: #2196f3"
                 >Студія</a
               >
             </li>
@@ -255,8 +258,9 @@
           <ul class="photo-block__images">
             <li class="photo-block__item">
               <img
-                src="./images/box-1.webp"
+                src="./images/box-1@1x.jpg"
                 alt="клавіатура та комп'ютер"
+                srcset="./images/box-1@1x.jpg 1x, ./images/box-1@2x.jpg 2x"
                 width="370"
                 height="294"
               />
@@ -266,8 +270,9 @@
             </li>
             <li class="photo-block__item">
               <img
-                src="./images/img.jpg"
+                src="./images/img@1x.jpg"
                 alt="людина з телефоном біля екрана ноутбука"
+                srcset="./images/img@1x.jpg 1x, ./images/img@2x.jpg 2x"
                 width="370"
                 height="294"
               />
@@ -279,6 +284,7 @@
               <img
                 src="./images/box-3.jpg"
                 alt="людина тримає планшет в руках"
+                srcset="./images/box-3.jpg 1x, ./images/box-3@2x.jpg 2x"
                 width="370"
                 height="294"
               />
@@ -295,16 +301,42 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/img-ihor-mobile.jpg   1x,
-                  ./images/img-ihor-mobile2x.jpg 2x
-                "
-                src="./images/img-ihor-mobile.jpg"
-                alt="фото співробітника"
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/ihor-mobile@1x.jpg 1x,
+                    ./images/ihor-mobile@2x.jpg 2x
+                  "
+                  sizes="(max-width: 767px) 100vw"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/ihor-tablet@1x.jpg 1x,
+                    ./images/ihor-tablet@2x.jpg 2x
+                  "
+                  sizes="(max-width: 1199px) 100vw"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img-ihor-desk.jpg,
+                    ./images/ihor-desk@2x.jpg  2x
+                  "
+                  sizes="(min-width: 1200px) 100vw"
+                />
+
+                <img
+                  src="./images/ihor-mobile@1x.jpg"
+                  alt="фото співробітника"
                   width="270"
-                height="260"
-              />
+                  height="260"
+                />
+              </picture>
+
               <div class="members">
                 <h3 class="members__name">Ігор Дем'яненко</h3>
                 <p class="members__profesion">Product Designer</p>
@@ -341,23 +373,47 @@
                       <svg class="members__social-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use></svg></a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-olha-mobile.jpg"
-                srcset="
-                  ./images/img-olha-mobile.jpg   1x,
-                  ./images/img-olha-mobile2x.jpg 2x
-                "
-                alt="фото співробітника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img-olha-mobile.jpg 1x,
+                    ./images/img-olha-mobile@2x.jpg 2x
+                  "
+                  sizes="(max-width: 767px) 100vw"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/olha-tablet@1x.jpg 1x,
+                    ./images/olha-tablet@2x.jpg 2x
+                  "
+                  sizes="(max-width: 1199px) 100vw"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img-olha-desk.jpg,
+                    ./images/olha-desk@2x.jpg  2x
+                  "
+                  sizes="(min-width: 1200px) 100vw"
+                />
+
+                <img
+                  src="./images/img-olha-mobile.jpg"
+                  alt="фото співробітника"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="members">
                 <h3 class="members__name">Ольга Рєпіна</h3>
                 <p class="members__profesion">Frontend Developer</p>
@@ -394,23 +450,47 @@
                       <svg class="members__social-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use></svg ></a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-mykola-mobile.jpg"
-                srcset="
-                  ./images/img-mykola-mobile.jpg   1x,
-                  ./images/img-mykola-mobile2x.jpg 2x
-                "
-                alt="фото співробітника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img-mykola-mobile.jpg 1x,
+                    ./images/img-mykola-mobile2x.jpg 2x
+                  "
+                  sizes="(max-width: 767px) 100vw"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/mykola-tablet@1x.jpg 1x,
+                    ./images/mykola-tablet@2x.jpg 2x
+                  "
+                  sizes="(max-width: 1199px) 100vw"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img-mykola-desk.jpg,
+                    ./images/mykola-desk@2x.jpg  2x
+                  "
+                  sizes="(min-width: 1200px) 100vw"
+                />
+
+                <img
+                  src="./images/img-mykola-mobile.jpg"
+                  alt="фото співробітника"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="members">
                 <h3 class="members__name">Микола Тарасов</h3>
                 <p class="members__profesion">Marketing</p>
@@ -447,23 +527,47 @@
                       <svg class="members__social-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use></svg></a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-myh-mobile.jpg"
-                srcset="
-                  ./images/img-myh-mobile.jpg   1x,
-                  ./images/img-myh-mobile2x.jpg 2x
-                "
-                alt="фото співробітника"
-                width="270"
-                height="260"
-              />
+               <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img-myh-mobile.jpg 1x,
+                    ./images/img-myh-mobile.jpg 2x
+                  "
+                  sizes="(max-width: 767px) 100vw"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/myh-tablet@1x.jpg 1x,
+                    ./images/myh-tablet@2x.jpg 2x
+                  "
+                  sizes="(max-width: 1199px) 100vw"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img-myh-desk.jpg,
+                    ./images/myh-desk@2x.jpg  2x
+                  "
+                  sizes="(min-width: 1200px) 100vw"
+                />
+
+                <img
+                  src="./images/img-myh-mobile.jpg"
+                  alt="фото співробітника"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="members">
                 <h3 class="members__name">Михайло Єрмаков</h3>
                 <p class="members__profesion">UI Designer</p>

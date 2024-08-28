@@ -127,10 +127,21 @@
     }
   }
 }
- @media screen and (max-width: 400px) {
-  .social-links__link{
-    font-size: 15px;
-    font-weight: 600;
+ @media screen and (max-width: 479px) {
+ .social-links {
+    margin-top: 32px; 
+    white-space: normal ;
+  }
+
+  .social-links__link {
+    font-size: 16px; 
+    font-weight: 500;
+    margin: 0; 
+  }
+
+  .social-links__link + .social-links__link::before {
+    width: 10px; 
+    margin: 4px 4px; 
   }
  
  }
