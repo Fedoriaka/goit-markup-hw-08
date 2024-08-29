@@ -686,13 +686,20 @@ ul {
     height: 28px;
   }
   .modal-form__checkbox-icon {
-    width: 25px;
-    height: 17px;
+    width: 20px;
+    height: 16px;
   }
   .modal-form__checkbox-label {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal-form__checkbox-label {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .benefit {
@@ -1592,11 +1599,6 @@ ul {
   color: #212121;
   text-decoration: none;
 }
-@media screen and (max-width: 1200px) {
-  .cards-list__sub-title {
-    font-size: 16px;
-  }
-}
 
 .cards-list__filter {
   margin-top: 4px;
@@ -1630,7 +1632,7 @@ ul {
 @media screen and (min-width: 768px) {
   .cards-list__item {
     width: 354px;
-    max-height: 440px;
+    height: 440px;
   }
   .cards-list__item img {
     width: 354px;
@@ -1775,18 +1777,17 @@ ul {
     margin: 0 10px;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 410px) {
   .social-links {
     margin-top: 32px;
-    white-space: normal;
   }
   .social-links__link {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     margin: 0;
   }
   .social-links__link + .social-links__link::before {
     width: 10px;
-    margin: 4px 4px;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */

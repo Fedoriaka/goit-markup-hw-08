@@ -20,7 +20,6 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
@@ -53,8 +52,8 @@
     transform: translateY(0);
     opacity: 1;
   }
-   @media screen and (max-width: 300px) {
-  height: auto;
+  @media screen and (max-width: 300px) {
+    height: auto;
   }
 }
 
@@ -64,9 +63,9 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   color: #fff;
-   @media screen and (max-width: 479px) {
-font-size: 16px;
-}
+  @media screen and (max-width: 479px) {
+    font-size: 16px;
+  }
 }
 
 .cards-list__border {
@@ -78,7 +77,6 @@ font-size: 16px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   flex-grow: 1;
- 
 }
 
 .cards-list__sub-title {
@@ -88,10 +86,6 @@ font-size: 16px;
   letter-spacing: 0.06em;
   color: $main-color;
   text-decoration: none;
-
-  @media screen and (max-width: 1200px) {
-    font-size: 16px;
-  }
 }
 
 .cards-list__filter {
@@ -106,15 +100,12 @@ font-size: 16px;
 
 .cards-list__item {
   @media screen and (max-width: 479px) {
-       width: 100%;
-      
-    
+    width: 100%;
+
     & img {
       width: 100%;
       height: auto;
     }
-
-
   }
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -124,19 +115,16 @@ font-size: 16px;
       width: 450px;
       height: 294px;
     }
-
-    
   }
 
   @media screen and (min-width: 768px) {
     width: 354px;
-    max-height: 440px;
+    height: 440px;
 
     & img {
       width: 354px;
       height: 294px;
     }
-    
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
@@ -146,6 +134,5 @@ font-size: 16px;
       width: 370px;
       height: 294px;
     }
-    
   }
 }
